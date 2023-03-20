@@ -1,5 +1,4 @@
-var uriTemplates = require('uri-templates');
-
+import UriTemplate from './uri-templates.js'
 
 var JSONLDMacro = {};
 
@@ -1120,7 +1119,8 @@ SELECT * { \n\
     });
 };
 
-if(typeof(window) !== 'undefined') {
-    window.JSONLDMacro = JSONLDMacro;
-}
-module.exports.JSONLDMacro = JSONLDMacro;
+export default JSONLDMacro
+// if(typeof(window) !== 'undefined') {
+//     window.JSONLDMacro = JSONLDMacro;
+// }
+// module.exports.JSONLDMacro = JSONLDMacro;
